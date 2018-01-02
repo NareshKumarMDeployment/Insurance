@@ -1,0 +1,60 @@
+{
+  "layers": [
+    {
+      "type": "Dynamic",
+      "name": "Drought",
+      "url": "https://earthobs1.arcgis.com/arcgis/rest/services/US_Drought_Current/MapServer",
+      "opacity": 0.6,
+      "visible": true,
+      "imageformat": "png8",
+      "imagedpi": 96,
+      "disableclientcaching": false,
+      "hidelayers": "",
+      "visiblelayers": "0"
+    },
+    {
+      "type": "Dynamic",
+      "name": "Weather Warnings",
+      "url": "https://livefeeds.arcgis.com/arcgis/rest/services/LiveFeeds/NWS_Watches_Warnings_and_Advisories/MapServer",
+      "opacity": 0.42,
+      "visible": true,
+      "imageformat": "png8",
+      "imagedpi": 96,
+      "disableclientcaching": false,
+      "hidelayers": "2",
+      "visiblelayers": "1,3,4,5,6,8,9,10,11,12"
+    },
+    {
+      "type": "Dynamic",
+      "name": "Long Range Sever Weather Warnings",
+      "url": "https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/wwa_meteoceanhydro_longduration_hazards_time/MapServer",
+      "opacity": 0.6,
+      "visible": true,
+      "imageformat": "png8",
+      "imagedpi": 96,
+      "disableclientcaching": false,
+      "hidelayers": "3,6,10,13,17,20,24,27,30,33,36,39,42",
+      "visiblelayers": "2,5,9,12,16,19,23,26,29,32,35,38,41"
+    },
+    {
+      "type": "Feature",
+      "url": "https://demographics7.arcgis.com/arcgis/rest/services/USA_MPI_1_2017/MapServer/2",
+      "name": "Insurance",
+      "opacity": 0.6,
+      "visible": true,
+      "showLabels": true,
+      "autorefresh": 0,
+      "mode": "ondemand"
+    },
+    {
+      "type": "Feature",
+      "url": "https://coast.noaa.gov/arcgis/rest/services/MarineCadastre/PhysicalOceanographicAndMarineHabitat/MapServer/3",
+      "name": "Radar",
+      "opacity": 0.6,
+      "visible": true,
+      "showLabels": true,
+      "autorefresh": 0,
+      "mode": "ondemand"
+    }
+  ]
+}
