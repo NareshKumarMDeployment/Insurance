@@ -206,7 +206,7 @@ define(["dojo/_base/declare",
                 this.own(layerToAdd.on("load", lang.hitch(this, this.onLayerAdded, layerCfg)));
 
                 this.map.addLayer(layerToAdd);
-                console.log('AddLayer :: addFeatureLayerToMap', layerCfg);
+                console.log('AddLayer :: addFeatureLayerToMap......', layerCfg,this.map.zoom);
             },
 
             /**
